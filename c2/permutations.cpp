@@ -20,7 +20,7 @@ void search()
     }
     else
     {
-        for (int i = 1; i <= n ;i++)
+        for (int i = 1; i <= (int) n ;i++)
         {
             if (chosen[i]) continue;
             chosen[i] = true;
@@ -35,6 +35,6 @@ void search()
 int main()
 {
     cin >> n;
-    chosen.resize(n + 1);
+    chosen.resize(n +1);
     search();
 }
