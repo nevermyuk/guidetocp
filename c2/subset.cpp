@@ -1,7 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <string>
-#include <algorithm>
 
 using namespace std;
 
@@ -12,11 +10,12 @@ void search(int k)
 {
     if (k == n + 1)
     {
+        cout << "{ ";
         for (vector<int>::const_iterator i = subset.begin(); i != subset.end(); ++i)
         {
-            std::cout << *i << ' ';
+            cout << *i << ' ';
         }
-        std::cout << "\n";
+        cout << "}"<<"\n";
     }
     else
     {
@@ -32,6 +31,5 @@ void search(int k)
 int main()
 {
     cin >> n;
-    cout << "\n";
     search(1);
 }
